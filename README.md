@@ -1,1 +1,3 @@
 # MyCode
+代码有三部分，分别是ResNet模型、DenseNet模型和读取以保存的DenseNet model并生成提交文件
+要验证得分的话只需打开第三部分LoadDenseNet即可
