@@ -17,8 +17,6 @@ K.set_session(sess)
 path_test = ('E:\\SJTU\\sjtu-m3dv-medical-3d-voxel-classification\\test')
 files_test = os.listdir(path_test)
 files_test.sort(key=lambda x: int(x[9:-4]))
-csv_file = pd.read_csv('E:SJTU\\sjtu-m3dv-medical-3d-voxel-classification\\train_val.csv')
-mask = csv_file['lable']
 t2 = 0
 tmp1 = np.zeros([32,32,32])
 tmp2 = np.zeros([32,32,32])
@@ -28,7 +26,7 @@ out_name = []
 for filename in files_test:
     t2 = t2+1
     out_name.append(filename[:-4])
-    npz = np.load('E:SJTU\\sjtu-m3dv-medical-3d-voxel-classification\\test\\'+filename)
+    npz = np.load(path_test+"\\"+filename)
     voxel = npz['voxel']
     seg = npz['seg']
     tmp1[0:32,0:32,0:32] = voxel[33:65,33:65,33:65]
