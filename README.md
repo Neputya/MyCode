@@ -1,3 +1,3 @@
 # MyCode
-代码有三部分，分别是ResNet模型、DenseNet模型和LoadDenseNet(读取已保存的DenseNet model（DenseNet.h5）并生成提交文件)代码，要验证得分的话只需打开第三部分LoadDenseNet即可  
-生成的Submission文件由于格式问题需手动将表格第一列删除，然后将旁边两列向左移动一列即可
+代码有三部分，分别是ResNet模型、DenseNet模型和LoadDenseNet(读取已保存的DenseNet model（DenseNet.h5）并生成提交文件)代码，要验证得分的话只需打开第三部分LoadDenseNet即可（需将DenseNet.h5与LoadDenseNet保存在同一工作路径下）
+生成的Submission文件由于格式问题需手动将表格第一列（序号列）删除，然后将旁边两列向左移动一列即可
